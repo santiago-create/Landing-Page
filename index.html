@@ -1,62 +1,125 @@
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>build a product landing page</title>
-    <link rel="stylesheet" href="styles.css">
+<!DOCTYPE html>
+<html>
+  <head>   
+      <script src="https://kit.fontawesome.com/7cb32967ff.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    
-    <header id="header">
-      <img src="https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png" alt="logo" width="100" id="header-img"/>
-s
-      <nav id="nav-bar">
-        <ul>
-          <li class="nav-link">
-            <a href="#home">Home</a>
-            </li>
+    <div id="page-wrapper">
+      <header id="header">
+        <div class="logo">
+          <p class="img title"><img
+            id="header-img"
+            src="./5.jpg" width="70px"
+          /> LaptopsCorp</p>
+        </div>
 
-          <li class="nav-link">
-            <a href="#video">Video</a>
-            </li>
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#features">Features</a></li>
+            <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+            <li><a class="nav-link" href="#pricing">Pricing</a></li>
+          </ul>
+        </nav>
+      </header>
 
-          <li class="nav-link"><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    
+      <div class="container"></div>
 
-      <section class="#home">
-        <h1 class="title">My First App Design</h1>
-        <p class="subtitle">My dream in life isto become a proffesioner web and software developer</p>
-      </section>
-
-      <section class="#video">
-        <video width="240" height="80" control>
-          <source src="https://player.vimeo.com/external/348824308.sd.mp4?s=b6596c8a1d0ef5b350af2a2cebc6fdb12bfa56d0&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
-          <source src="movie.ogg" type="video/ogg">
-          Birds in the field.
-        </video>
-        <br>
-
-        
+      <section id="hero">
+        <h2></h2>
         <form id="form" action="https://www.freecodecamp.com/email-submit">
-
-                <input id="email" type="email" name="email" placeholder="enter your email">
-
-<input id="submit" type="submit" value="Submit">
-        
-        
-        </form
-      
-
-      <section class="contact">
-        <footer>
-          <p>No. 39 David Ejoor Crescent, Gudu District, Abuja, Nigeria</p>
-
-          <p>+2348 5961 1779</p>
-
-        </footer>
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <input id="submit" type="submit" value="Get Started" class="btn" />
+        </form>
       </section>
-    </header>
+
+      <div class="container">
+        <section id="features">
+          <div class="grid">
+            <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+            <div class="desc">
+              <h2>Premium Materials</h2>
+              <p>
+                Our latest Alienware laptops are crafted from materials 
+                like anodized aluminum, magnesium alloy, and stainless steel 
+                to deliver a solid build, slim profile, and optimized performance-driven design.
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon"><i class="fa fa-3x fa-eye"></i></div>
+            <div class="desc">
+              <h2>Fast Update Rate</h2>
+              <p>
+                Immerse yourself in every game with incredible refresh
+                 rates ranging from 240Hz to 480Hz and a minimum response time of just 3ms.
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon">
+              <i class="fa fa-3x fa-web-awesome" ></i>
+            </div>
+            <div class="desc">
+              <h2>Comfortable and Simple</h2>
+              <p>
+                The third generation of our Legend design features a new V-profile and is carefully designed to accommodate a more comfortable wrist rest and allow for quick and easy opening.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="how-it-works">
+        </section>
+        <section id="pricing">
+          <div class="product" id="tenor">
+            <div class="level">m16 R2 Basic</div>
+            <h2>$1.610</h2>
+            <ol>
+              <li>Intel® Core™ Ultra 7 155H .</li>
+              <li>SSD NVMe PCIe M.2 de 1 TB.</li>
+              <li>NVIDIA® GeForce RTX™ 4060, GDDR6 de 8 GB.</li>
+              <li>16 GB: 2 x 8 GB, DDR5, 5600 MT/s.</li>
+            </ol>
+            <button class="button">Select</button>
+          </div>
+          <div class="product" id="pro">
+            <div class="level">m16 R2 Pro</div>
+            <h2>$2.106</h2>
+            <ol>
+              <li>Intel® Core™ Ultra 7 155H.</li>
+              <li>NVIDIA® GeForce RTX™ 4060, GDDR6 de 8 GB.</li>
+              <li>32 GB: 2 X 16 GB, DDR5, 5600 MT/s.</li>
+              <li>SSD NVMe PCIe M.2 de 4 TB.</li>
+            </ol>
+            <button class="button">Select</button>
+          </div>
+          <div class="product" id="Ultra">
+            <div class="level">m16 R2 Ultra</div>
+            <h2>$3.237</h2>
+            <ol>
+              <li>Procesador Intel® Core™ Ultra 9 185H.</li>
+              <li>NVIDIA® GeForce RTX™ 4070, GDDR6 de 8 GB.</li>
+              <li>64 GB: 2 X 32 GB, DDR5, 5600 MT/s.</li>
+              <li>RAID0 de 8 TB (2 x 4 TB), M.2, NVMe PCIe, SSD.</li>
+            </ol>
+            <button class="button">Select</button>
+          </div>
+        </section>
+        <footer>
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <span>Copyright 2024, Original LaptopCorp</span>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
