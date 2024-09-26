@@ -8,14 +8,12 @@
     <div id="page-wrapper">
       <header id="header">
         <div class="logo">
-          <p class="img title"><img
-            id="header-img"
-            src="./5.jpg" width="70px"
+          <p class="img-title"><img id="header-img" src="./5.jpg" width="70px"
           /> LaptopsCorp</p>
         </div>
 
         <nav id="nav-bar">
-          <ul>
+          <ul id="ul-links">
             <li><a class="nav-link" href="#features">Features</a></li>
             <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
             <li><a class="nav-link" href="#pricing">Pricing</a></li>
@@ -25,21 +23,17 @@
 
       <div class="container"></div>
 
-      <section id="hero">
-        <h2></h2>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <section id="section-email">
+        <h2 id="h2">The best laptops money can buy.</h2>
+        <form id="form">
           <input
-            name="email"
-            id="email"
-            type="email"
-            placeholder="Enter your email address"
-            required
-          />
-          <input id="submit" type="submit" value="Get Started" class="btn" />
+            name="email" id="email" type="email" placeholder="Enter your email address" required/>
+          <input id="submit" type="submit" value="Get Started" class="button" />
         </form>
       </section>
 
       <div class="container">
+        <h2 class="h2">Alienware m16 R2</h2>
         <section id="features">
           <div class="grid">
             <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
@@ -75,49 +69,50 @@
           </div>
         </section>
         <section id="how-it-works">
+          <iframe id="video"  src="https://youtu.be/NzAZGeOK2zQ?si=UgkgNrX9Hjg_Lhaq"  allowfullscreen><video id="video" src=></video></iframe>
         </section>
         <section id="pricing">
-          <div class="product" id="tenor">
+          <div class="product" id="Basic">
             <div class="level">m16 R2 Basic</div>
             <h2>$1.610</h2>
-            <ol>
+            <ul class="ul-list">
               <li>Intel® Core™ Ultra 7 155H .</li>
               <li>SSD NVMe PCIe M.2 de 1 TB.</li>
               <li>NVIDIA® GeForce RTX™ 4060, GDDR6 de 8 GB.</li>
               <li>16 GB: 2 x 8 GB, DDR5, 5600 MT/s.</li>
-            </ol>
+            </ul>
             <button class="button">Select</button>
           </div>
           <div class="product" id="pro">
             <div class="level">m16 R2 Pro</div>
             <h2>$2.106</h2>
-            <ol>
+            <ul class="ul-list">
               <li>Intel® Core™ Ultra 7 155H.</li>
               <li>NVIDIA® GeForce RTX™ 4060, GDDR6 de 8 GB.</li>
               <li>32 GB: 2 X 16 GB, DDR5, 5600 MT/s.</li>
               <li>SSD NVMe PCIe M.2 de 4 TB.</li>
-            </ol>
+            </ul>
             <button class="button">Select</button>
           </div>
           <div class="product" id="Ultra">
             <div class="level">m16 R2 Ultra</div>
             <h2>$3.237</h2>
-            <ol>
+            <ul class="ul-list">
               <li>Procesador Intel® Core™ Ultra 9 185H.</li>
               <li>NVIDIA® GeForce RTX™ 4070, GDDR6 de 8 GB.</li>
               <li>64 GB: 2 X 32 GB, DDR5, 5600 MT/s.</li>
-              <li>RAID0 de 8 TB (2 x 4 TB), M.2, NVMe PCIe, SSD.</li>
-            </ol>
-            <button class="button">Select</button>
+              <li>RAID0 de 8 TB (2 x 4 TB), M.2, NVMe.</li>
+            </ul>
+            <button class="button-3">Select</button>
           </div>
         </section>
         <footer>
-          <ul>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Contact</a></li>
+          <ul class="ul-lists">
+            <li><a class="link-footer" href="#">Privacy</a></li>
+            <li><a class="link-footer" href="#">Terms</a></li>
+            <li><a class="link-footer" href="#">Contact</a></li>
           </ul>
-          <span>Copyright 2024, Original LaptopCorp</span>
+          <span class="span-footer">Copyright 2024, Original LaptopCorp</span>
         </footer>
       </div>
     </div>
