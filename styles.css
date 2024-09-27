@@ -42,7 +42,6 @@
   
   header {
     position: fixed;
-    top: 0;
     min-height: 80px;
     padding: 0px 10px;
     display: flex;
@@ -50,6 +49,7 @@
     justify-content: space-between;
     background-color: #ebebeb;
     width: 100%;
+    top: 0;
   }
 
   @media (max-width: 600px) {
@@ -175,9 +175,8 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      text-align: center
-;
-    }
+      text-align: center;
+  }
   }  
   
 
@@ -223,7 +222,7 @@
   
   
   button {
-    margin: 15px 0;
+    margin: auto 0 20px;
     background-color: rgb(174, 112, 255);
   }
 
